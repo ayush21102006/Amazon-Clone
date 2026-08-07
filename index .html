@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopKart — Online Shopping for Everyone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== TOP NAV ===== -->
+  <header class="topnav">
+    <div class="nav-row">
+      <a href="#" class="nav-logo">
+        shop<span class="logo-accent">kart</span>
+      </a>
+
+      <div class="nav-deliver">
+        <span class="pin">&#128205;</span>
+        <div class="deliver-text">
+          <span class="deliver-line1">Deliver to Aditya</span>
+          <span class="deliver-line2">Ghaziabad 201009</span>
+        </div>
+      </div>
+
+      <form class="nav-search" id="searchForm">
+        <select class="search-category" aria-label="Search category">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Books</option>
+          <option>Home &amp; Kitchen</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search ShopKart.in" aria-label="Search" />
+        <button type="submit" class="search-btn" aria-label="Search">&#128269;</button>
+      </form>
+
+      <div class="nav-lang">
+        <span class="flag">&#127470;&#127475;</span> EN
+      </div>
+
+      <div class="nav-account">
+        <span class="nav-line1">Hello, sign in</span>
+        <span class="nav-line2">Account &amp; Lists &#9662;</span>
+      </div>
+
+      <div class="nav-orders">
+        <span class="nav-line1">Returns</span>
+        <span class="nav-line2">&amp; Orders</span>
+      </div>
+
+      <a href="#" class="nav-cart">
+        <span class="cart-icon">&#128722;</span>
+        <span class="cart-count" id="cartCount">0</span>
+        <span class="cart-label">Cart</span>
+      </a>
+    </div>
+
+    <!-- ===== SUB NAV ===== -->
+    <div class="subnav">
+      <button class="hamburger" id="hamburgerBtn">&#9776; All</button>
+      <a href="#">Today's Deals</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Registry</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Sell</a>
+      <a href="#" class="subnav-hide-mobile">New Releases</a>
+      <a href="#" class="subnav-hide-mobile">Fashion</a>
+      <a href="#" class="subnav-hide-mobile">Electronics</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO CAROUSEL ===== -->
+  <section class="hero">
+    <button class="carousel-arrow left" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="slide slide-1"><div class="slide-text"><h2>Big Billion Days</h2><p>Up to 70% off electronics</p></div></div>
+      <div class="slide slide-2"><div class="slide-text"><h2>Fashion Refresh</h2><p>New arrivals every week</p></div></div>
+      <div class="slide slide-3"><div class="slide-text"><h2>Home &amp; Kitchen</h2><p>Everything for your space</p></div></div>
+    </div>
+    <button class="carousel-arrow right" id="nextSlide" aria-label="Next slide">&#10095;</button>
+    <div class="hero-fade"></div>
+  </section>
+
+  <!-- ===== PRODUCT CARD GRID ===== -->
+  <section class="card-grid" id="cardGrid"></section>
+
+  <!-- ===== DEAL STRIP ===== -->
+  <section class="deal-strip">
+    <h2>Today's Deals</h2>
+    <div class="deal-row" id="dealRow"></div>
+  </section>
+
+  <a href="#top" class="back-to-top">Back to top</a>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>Get to Know Us</h3>
+        <a href="#">About ShopKart</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">ShopKart Science</a>
+      </div>
+      <div class="footer-col">
+        <h3>Connect with Us</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-col">
+        <h3>Make Money with Us</h3>
+        <a href="#">Sell on ShopKart</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Self-Publish</a>
+      </div>
+      <div class="footer-col">
+        <h3>Let Us Help You</h3>
+        <a href="#">Your Account</a>
+        <a href="#">Returns Centre</a>
+        <a href="#">100% Purchase Protection</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">shop<span class="logo-accent">kart</span></div>
+      <div class="footer-links">
+        <span>Conditions of Use</span>
+        <span>Privacy Notice</span>
+        <span>Interest-Based Ads</span>
+      </div>
+      <p class="footer-copy">This is a student project built for a college technical-club submission. Not affiliated with Amazon in any way. &copy; 2026 ShopKart (demo).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
